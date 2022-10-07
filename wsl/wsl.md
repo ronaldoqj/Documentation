@@ -3,5 +3,5 @@
 [:back:](/README.md) [home](/README.md) | **WSL**
 # WSL <span align="right">- Instalação e documentação de comandos.</span>
 
-### 🚀 Começando
+### 🚀 Install
 ### 📋 Pré-requisitos
