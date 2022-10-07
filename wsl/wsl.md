@@ -1,13 +1,4 @@
 
-![This is an image](/images/wsl-all-versions.jpg)
-
-
-
+![This is an image](/images/wsl-header.jpg)
+[:back:](/README.md) [home](/README.md) | **WSL**
 # WSL <span align="right">- Instalação e documentação de comandos.</span>
-> [:back:](/README.md)
-
-
-
-> > :Button label=GitHub, url=https://github.com
-
-<h1 align="right">test</h1>
