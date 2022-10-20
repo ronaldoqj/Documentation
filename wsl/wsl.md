@@ -57,16 +57,19 @@
 >    > $ sudo apt update
 >    > ```
 
+
 <br />
 
 ### 📌 Extras
 > __Comandos básicos do ***WSL***__
 > - [https://learn.microsoft.com/pt-br/windows/wsl/basic-commands](https://learn.microsoft.com/pt-br/windows/wsl/basic-commands)
 
+
 <br />
 
 ## 📋 Notes
 
+1. wsl.conf
 > Ao executar o __Linux__ pelo __WSL__, sempre que for reiniciado o sistema, os arquivos da pasta __ETC__ serão restaurados.
 > Para poder persistir modificações de configurações padrão do sistema mesmo em sua reinicialização, Existe a possibilidade de configurar um arquivo especifico para essa finalidade, Esse arquivo se chama __`wsl.conf`__ que fica localizado dentro da pasta __ETC__ (se não existir deverá ser criado).
 > No __`wsl.conf`__ é possivel configurar o stop de regeneração de certos arquivos e é possivel executar comandos logo após a todo boot realizado.
