@@ -1,6 +1,7 @@
 
 ![This is an image](/images/wsl-header.jpg)
 [:back:](/README.md) [home](/README.md) | **WSL**
+
 # WSL <span align="right">- Instalação e documentação de comandos.</span>
 
 ### 🚀 Install
@@ -48,7 +49,7 @@
 >    > ```
 >    > **Esperar 8s e reinicializar o WSL Ubuntu.**
 >    > 
->    > Para reiniciar basta abrir um terminal do **WSL** novamente.
+>    >    > Para reiniciar basta abrir um terminal do **WSL** novamente.
 >
 > 2. **Após esse procedimento o problema deverá ter sido resolvido. Volte a executar o command de atualização do "apt" no terminal do WSL Linux.**
 >    > ```ruby
