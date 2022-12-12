@@ -60,8 +60,16 @@
 
 <br />
 
+
 ### 📌 Extras
 > __Comandos básicos do ***WSL***__
+> 
+>   > **Versão atual**
+>   > ```ruby
+>   > $ wslfetch
+>   > ```
+> 
+> __Documentação site microsoft ***WSL***__
 > - [https://learn.microsoft.com/pt-br/windows/wsl/basic-commands](https://learn.microsoft.com/pt-br/windows/wsl/basic-commands)
 
 
