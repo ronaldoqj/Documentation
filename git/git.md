@@ -12,7 +12,7 @@
 > 
 > ### Voltando para o commit anterior e excluindo os commit posteriores
 > ```ruby
-> $ git reset --hard f9d681ca1712de3843db3ab8fed0c1ccf0f92161
+> $ git reset --hard [ID do commit]
 > ```
 > 
 > ### Reescrevendo a branch remota
