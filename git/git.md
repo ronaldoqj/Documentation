@@ -1,6 +1,6 @@
-# WSL <span align="right">- Commands.</span>
+# GIT <span align="right">- Commands.</span>
 
-[:back:](/README.md) [home](/README.md) | **WSL**
+[:back:](/README.md) [home](/README.md) | **GIT**
 
 <br>
 
