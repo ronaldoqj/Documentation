@@ -7,6 +7,7 @@ Documentação de tecnologias, plugins e códigos.
 > **Documentations**
 > 
 > > [WSL](wsl/wsl.md)
+> > [Ubuntu](ubuntu/ubuntu.md)
 
 > Notes
 
