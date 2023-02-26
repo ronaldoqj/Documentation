@@ -1,7 +1,7 @@
 # Ubuntu <span align="right">- Instalação e documentação de comandos.</span>
 
 ![This is an image](/images/ubuntu.jpg)
-[:back:](/README.md) [home](/README.md) | **WSL**
+[:back:](/README.md) [home](/README.md) | **Ubuntu**
 
 <br>
 
