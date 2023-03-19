@@ -30,10 +30,16 @@
 > ```ruby
 >
 > $ sudo apt update
+
+<br />
+
+### ⛔ Errors
+
+<br />
+
+1) **Erro de DNS**
 > 
-
-
-> **Obs:** Caso apresente erro ao tentar realizar o update do **Linux**, provavelmente há configurado um proxy impedindo comunicações externas.
+> Caso apresente erro ao tentar realizar o update do **Linux**, provavelmente há configurado um proxy impedindo comunicações externas.
 > Para resolver esse problema basta realizar a seguinte configuração:
 > 1. **Editar ou criar o arquivo "/etc/wsl.conf" com o seguinte conteúdo:**
 >    > ```ruby
@@ -57,6 +63,24 @@
 >    > $ sudo apt update
 >    > ```
 
+<br />
+
+2) **Erro de inicialização do WSL**
+>  
+>  Caso apresente o seguinte erro no terminal ao tentar inicializar o WSL:
+>    > ```ruby
+>    > [process exited with code 4294967295 (0xffffffff)]
+>    > ``` 
+> Realizar o shutdown do WSL:
+>    > ```ruby
+>    > $ wsl --shutdown
+>    > ``` 
+> Realizar o restart da VM (PowerShell como administrador):
+>    > ```ruby
+>    > $ Get-Service LxssManager | Restart-Service
+>    > $ Get-Service vmcompute | Restart-Service -force
+>    > ``` 
+> Após esse procedimento será possível inicializar o WSL novamente abrindo o terminal Linux
 
 <br />
 
