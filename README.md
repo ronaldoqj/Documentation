@@ -7,6 +7,7 @@ Documentação de tecnologias, plugins e códigos.
 > **Documentations**
 > 
 > > [WSL](wsl/wsl.md)
+> > > [Docker](wsl/docker/docker.md)
 > 
 > > [Ubuntu](ubuntu/ubuntu.md)
 
