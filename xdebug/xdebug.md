@@ -100,7 +100,12 @@
 > > ```
 
 #### 5. VSCode com Docker (Laravel Sail)
-> Para que o Xdebug consiga mapear corretamente o código dentro do container será necessário add a seguinte linha no arquivo ".vscode/launch.json"
+> No arquivo ".env" é necessário adicionar a seguinte variável para que o Laravel entenda que é para acionar o Debugger e quais módulos serão ativos:
+> > ```ruby
+> > $ SAIL_XDEBUG_MODE=develop,debug,coverage,trace
+> > ```
+> > 
+> Para que o Xdebug consiga mapear corretamente o código dentro do container será necessário adicionar as seguintes linhas no arquivo ".vscode/launch.json"
 > - Criar um arquivo de configuração chamado "launch.json"
 > 
 > > ```ruby
@@ -122,12 +127,9 @@
 > $ [url do projeto]?XDEBUG_TRIGGER
 > ```
 > Para não ser preciso adicionar esse parametro em todas URLs que queira executar o Xdebug, poderá instalar o plugin "Xdebuger Helper" no browser, esse plugin quando ativo adiciona automaticamente esse parametro em todas URL acessadas.
+> ![This is an image](/images/xdebug/xdebug-helper.png)
 > 
-<br />
 
-### 🚀 Links
-> ```ruby
-> $ some code...
-> ```
+<br />
 
 
