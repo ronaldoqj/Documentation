@@ -10,6 +10,8 @@ Documentação de tecnologias, plugins e códigos.
 > > > [Docker](wsl/docker/docker.md)
 > 
 > > [Ubuntu](ubuntu/ubuntu.md)
+> > 
+> > [Xdebug](xdebug/xdebug.md)
 
 > Notes
 
