@@ -14,7 +14,6 @@
 > > > ```ruby
 > > > $ sudo apt install php8.2-fpm
 > > > ```
-> Configuração do arquivo 
 
 #### 2. Configuração do xdebug.ini
 > Instalação do xdebug:
@@ -30,6 +29,7 @@
 #### 3. Configuração do Xdebug.ini Com Docker (Laravel Sail)
 > Em ambiente Docker, como por exemplo Laravel Sail, é preciso realizar alguns passos extras, para que seja possível o Xdebuger acessar um container no docker será necessário adicionar mais os seguintes códigos:
 > Parametros a mais no mods-available/xdebug.ini:
+> > > Essa configuração é necessária para informar ao Xdebug que o Host não será o padrão, mas sim o Host do Docker
 > > ```ruby
 > > xdebug.discover_client_host=0
 > > xdebug.client_host=host.docker.internal
