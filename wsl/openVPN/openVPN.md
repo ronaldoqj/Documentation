@@ -56,7 +56,7 @@
 
 > ```ruby
 > # 2. Configure the .ovpn file
-> $ sudo nano ~/vpn/my_file.ovpn
+> $ sudo nano ~/vpn/MY_FILE.ovpn
 >
 > # Change the line: to:
 > # from
