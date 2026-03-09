@@ -11,7 +11,7 @@ Documentação de tecnologias, plugins e códigos.
 > > > [OpenVPN](wsl/openVPN/openVPN.md)
 > 
 > > [Ubuntu](ubuntu/ubuntu.md) <br>
-> > > [Multipass, proxy and remote Vscode](wsl/ubuntu/multipass.md)
+> > > [Multipass, proxy and remote Vscode](ubuntu/multipass.md)
 > > 
 > > [Xdebug](xdebug/xdebug.md)
 
