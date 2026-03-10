@@ -71,7 +71,7 @@
 
 <br>
 
-### 🔄 Auto-start on WSL Boot
+### 🔄 Auto-start on Linux and WSL Boot
 > **Enable systemd:** In WSL 2, systemd is not active by default. Edit the `/etc/wsl.conf` file: (only to WSL)
 > ```ruby
 > [boot]
