@@ -23,7 +23,7 @@
 ### 🚀 Manual Installation
 > ```ruby
 > # 1. Install openVPN
-> $ sudo openvpn --config ~/vpn/MY_FILE.ovpn
+> $ sudo apt install openvpn easy-rsa
 > ```
 >
 
