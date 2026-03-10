@@ -7,13 +7,13 @@
 
 ### 📋 Notes
 > Multipass allows you to create and manage Ubuntu Virtual Machines within your environment.
-> This guide covers advanced setup, including automated aliases, SOCKS proxy tunneling for internal network access, and VS Code remote development.
-> The configuration aims to make the VM behave seamlessly, similar to a native WSL distribution.
+> This guide covers advanced setup, including automated aliases, SOCKS proxy tunneling, and port mirroring.
+> The goal is to make the VM behave seamlessly, similar to a native WSL distribution.
 
 <br>
 
 ### 🚀 Install & Setup
-> **Launch Instance:** Create a high-performance Ubuntu 24.04 instance with specific resources.
+> **Launch Instance:** Create a high-performance Ubuntu 24.04 instance.
 > ```ruby
 > # Launching the instance with 4 CPUs, 6GB RAM, and 200GB Disk
 > $ multipass launch 24.04 --name ubuntu24 --cpus 4 --memory 6G --disk 200G
@@ -34,43 +34,52 @@
 
 <br>
 
-### 🌐 Internal Network Access (SOCKS Tunnel)
-> Access the VM's internal VPN or network services directly from your Host browser using a secure tunnel.
+### 🌐 Accessing Localhost Applications
+> When running applications (like Angular or APIs) inside the VM, you have two main ways to access them from your Host.
 
-> **1. Get the VM Internal IP:**
+#### Option A: Direct IP Access (No Mirroring)
+> Run your application binding to `0.0.0.0` inside the VM:
 > ```ruby
-> $ multipass info ubuntu24 | grep IPv4
-> # Example output: “IPv4: 10.19.41.25”
+> # Run Angular on 0.0.0.0 to allow external access
+> $ ng serve --host 0.0.0.0
+> $ ng serve --host 0.0.0.0 --port 4201
+> ```
+> **Access via Host Browser:** Use the VM's internal IP (e.g., `http://10.19.41.25:4200`).
+
+#### Option B: Host Port Mirroring (SSH Tunneling)
+> If you prefer to access the VM services using `http://localhost` on your Host browser, use SSH Port Forwarding:
+> ```ruby
+> # Mirror a single port (4200)
+> $ ssh -L 4200:localhost:4200 ubuntu@10.19.41.25
+>
+> # Mirror multiple ports (Angular 1, Angular 2, and API)
+> $ ssh -L 4200:localhost:4200 -L 4201:localhost:4201 -L 8080:localhost:8080 ubuntu@10.19.41.25
 > ```
 
-> **2. Open the SSH Tunnel:** Keep this terminal window open to maintain the "data pipe".
+> **⚠️ Troubleshooting (Invalid Host Header):** If Angular refuses the connection on `localhost`, run it with the host check disabled inside the VM:
 > ```ruby
-> $ ssh -D 1080 ubuntu@10.19.41.25
+> $ ng serve --host 0.0.0.0 --disable-host-check
 > ```
 
-> **3. Configure Browser (Firefox):**
-> * Go to **Settings** > Search for **"Proxy"** > Click **Settings...**
-> * Select **Manual proxy configuration**.
-> * **SOCKS Host:** `127.0.0.1` | **Port:** `1080` | Select **SOCKS v5**.
-> * **CRUCIAL:** Check the box **"Proxy DNS when using SOCKS v5"**.
-> * **Tip:** Use the **FoxyProxy** extension to toggle this on/off with one click.
+<br>
+
+### 🔄 Dynamic SOCKS Tunneling
+> The SOCKS tunnel is dynamic. You can run multiple services in the VM and access them all through the Host browser by keeping a single tunnel open:
+>
+> * **Angular 1 (Port 4200):** `http://10.19.41.25:4200`
+> * **Angular 2 (Port 4201):** `http://10.19.41.25:4201`
+> * **API (Port 8080):** `http://10.19.41.25:8080`
+>
+> **SSH Command:** `$ ssh -D 1080 ubuntu@10.19.41.25`. Configure your browser or **FoxyProxy** extension to use SOCKS v5 on `127.0.0.1:1080`.
 
 <br>
 
 ### 💻 VS Code Remote Development
 > Connect your Host VS Code directly to the project files inside the Multipass VM via SSH.
 
-> **1. Install Extension:**
-> * Install **Remote - SSH** (by Microsoft) in your local VS Code.
-
-> **2. Connect to Host:**
-> * Click the green/blue icon (**><**) in the bottom-left corner.
-> * Select **Connect to Host...** and enter: `ubuntu@10.19.41.25`.
-> * VS Code will automatically install the server components inside the VM.
-
-> **3. Open Project:**
-> * Go to **File > Open Folder** and browse the VM's internal directories.
-> * **Benefits:** Full IntelliSense support (reads `node_modules` inside the VM) and integrated terminal within the VM environment.
+> **1. Connect to Host:** Click the green icon (**><**) and enter: `ubuntu@10.19.41.25`.
+> **2. Workflow:** Open the VS Code terminal and run `ng serve --host 0.0.0.0`. Access it via Firefox with the FoxyProxy enabled.
+> **3. Benefits:** Professional, isolated, and fast environment with real IntelliSense.
 
 <br />
 
