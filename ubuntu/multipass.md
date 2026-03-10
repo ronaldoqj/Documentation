@@ -77,8 +77,8 @@
 ### 💻 VS Code Remote Development
 > Connect your Host VS Code directly to the project files inside the Multipass VM via SSH.
 
-> **1. Connect to Host:** Click the green icon (**><**) and enter: `ubuntu@10.19.41.25`.
-> **2. Workflow:** Open the VS Code terminal and run `ng serve --host 0.0.0.0`. Access it via Firefox with the FoxyProxy enabled.
+> **1. Connect to Host:** Click the green icon (**><**) and enter: `ubuntu@10.19.41.25`. <br>
+> **2. Workflow:** Open the VS Code terminal and run `ng serve --host 0.0.0.0`. Access it via Firefox with the FoxyProxy enabled. <br>
 > **3. Benefits:** Professional, isolated, and fast environment with real IntelliSense.
 
 <br />
