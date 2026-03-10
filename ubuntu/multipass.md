@@ -12,6 +12,35 @@
 
 <br>
 
+### 🧹 Full Uninstall (Cleanup)
+> If you need to perform a "heavy cleaning" or completely remove Multipass from your system, follow these steps:
+
+> **1. Uninstall the Package:**
+> ```ruby
+> # Remove via Snap (if installed via snap)
+> $ sudo snap remove multipass
+>
+> # Remove via Apt (if installed via apt)
+> $ sudo apt-get remove --purge multipass
+> $ sudo apt-get autoremove
+> ```
+
+> **2. Residual Data Removal:**
+> Check if these folders still exist and delete them manually to clear configurations:
+> ```ruby
+> $ rm -rf ~/snap/multipass
+> $ sudo rm -rf /var/snap/multipass
+> $ sudo rm -rf /etc/multipass
+> ```
+
+> **3. Verify Removal:**
+> ```ruby
+> # This should return "command not found"
+> $ multipass --version
+> ```
+
+<br>
+
 ### 🚀 Install & Setup
 > **Launch Instance:** Create a high-performance Ubuntu 24.04 instance.
 > ```ruby
