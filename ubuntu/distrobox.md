@@ -21,9 +21,6 @@
 > # Uninstall Distrobox and Podman
 > $ sudo apt purge distrobox podman -y
 > $ sudo apt autoremove -y
->
-> # Remove residual configuration folders
-> $ sudo rm -rf ~/.local/share/containers ~/.local/share/distrobox
 > ```
 > **Verification:** Run `distrobox list` (should be empty) and `which podman` (should return nothing).
 
