@@ -1,4 +1,4 @@
-# OpenVPN on Ubuntu WSL <span align="right">- Documentation.</span>
+# VPN Network <span align="right">- Documentation.</span>
 
 ![This is an image](/images/vpn_network.jpg)
 [:back:](/README.md) [home](/README.md) | **OpenVPN**
