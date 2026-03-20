@@ -1,6 +1,6 @@
 # VPN Network <span align="right">- Documentation.</span>
 
-![This is an image](/images/vpn_network.jpg)
+![This is an image](/images/vpn_network.jpg)<br>
 [:back:](/README.md) [home](/README.md) | **OpenVPN**
 
 <br>

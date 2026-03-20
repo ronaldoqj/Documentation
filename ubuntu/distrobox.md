@@ -1,6 +1,6 @@
 # Distrobox on Ubuntu WSL <span align="right">- Documentation.</span>
 
-![This is an image](/images/distrobox.jpg)
+![This is an image](/images/distrobox.jpg)<br>
 [:back:](/README.md) [home](/README.md) | **Distrobox**
 
 <br>

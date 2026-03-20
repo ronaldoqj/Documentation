@@ -1,6 +1,6 @@
 # Docker Engine on Ubuntu WSL <span align="right">- Documentation.</span>
 
-![This is an image](/images/docker-on-windows.jpg)
+![This is an image](/images/docker-on-windows.jpg)<br>
 [:back:](/README.md) [home](/README.md) | **Docker**
 
 <br>

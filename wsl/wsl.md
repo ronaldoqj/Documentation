@@ -1,6 +1,6 @@
 # WSL <span align="right">- Instalação e documentação de comandos.</span>
 
-![This is an image](/images/wsl-header.jpg)
+![This is an image](/images/wsl-header.jpg)<br>
 [:back:](/README.md) [home](/README.md) | **WSL**
 
 <br>

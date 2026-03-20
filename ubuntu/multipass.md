@@ -1,6 +1,6 @@
 # Multipass on Ubuntu WSL <span align="right">- Documentation.</span>
 
-![This is an image](/images/multipass.png)
+![This is an image](/images/multipass.png)<br>
 [:back:](/README.md) [home](/README.md) | **Multipass**
 
 <br>

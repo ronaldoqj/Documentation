@@ -1,6 +1,6 @@
 # OpenVPN on Ubuntu WSL <span align="right">- Documentation.</span>
 
-![This is an image](/images/ssh-ubuntu.jpg)
+![This is an image](/images/ssh-ubuntu.jpg)<br>
 [:back:](/README.md) [home](/README.md) | **SSH Ubuntu**
 
 <br>
