@@ -8,7 +8,8 @@ Documentação de tecnologias, plugins e códigos.
 > 
 > > [WSL](wsl/wsl.md)
 > > > [Docker](wsl/docker/docker.md) <br>
-> > > [OpenVPN](wsl/openVPN/openVPN.md)
+> > > [OpenVPN](wsl/openVPN/openVPN.md) <br>
+> > > [SSH Ubuntu](wsl/sshUbuntu/sshUbuntu.md)
 > 
 > > [Ubuntu](ubuntu/ubuntu.md) <br>
 > > > [VPN Network](ubuntu/VPNNetwork.md) <br>
