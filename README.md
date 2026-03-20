@@ -17,6 +17,9 @@ Documentação de tecnologias, plugins e códigos.
 > > > [Distrobox](ubuntu/distrobox.md)
 > > 
 > > [Xdebug](xdebug/xdebug.md)
+>
+> > **Softwares** <br>
+> > > [Dbeaver SSH Connection](softwares/dbeaverSSHConnection.md) <br>
 
 > Notes
 
